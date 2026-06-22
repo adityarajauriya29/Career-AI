@@ -30,7 +30,7 @@ export default function Register() {
         role: 'student'
       })
 
-      nav('/')
+      nav('/dashboard')
     } catch (e) {
       setErr(e.response?.data?.detail || 'Registration failed')
     } finally {

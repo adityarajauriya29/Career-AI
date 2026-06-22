@@ -32,7 +32,7 @@ export default function Login() {
 
     try {
       await login(email, password)
-      nav('/')
+     nav('/dashboard')
     } catch (e) {
       setErr(e.response?.data?.detail || 'Login failed')
     } finally {
